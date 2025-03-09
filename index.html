@@ -38,6 +38,32 @@
 		.s1 { text-shadow: 4px 4px 5px black; }
 		.s2 { text-shadow: 2px 2px 2px black; }
 		.s3 { text-shadow: 1px 1px 1px black; }
+		/* 기본 네비게이션 배경 및 텍스트 색상 설정 */
+        .bg-2a2a2a {
+            background-color: #2a2a2a !important;
+        }
+
+        /* 기본 링크 색상 설정 */
+        .bg-2a2a2a .nav-link {
+            color: white !important;
+            transition: color 0.3s ease-in-out; /* 부드러운 색상 전환 효과 */
+        }
+
+        /* 마우스를 올렸을 때 색상이 더 밝아지도록 설정 */
+        .bg-2a2a2a .nav-link:hover {
+            color: #90ee90 !important; /* 연한 회색 */
+        }
+
+		.border-bottom {
+	    color: red !important;
+	    text-decoration: none; /* 기본 밑줄 제거 */
+	    transition: color 0.3s ease-in-out; /* 부드러운 색상 전환 */
+		}
+
+		.border-bottom:hover {
+		    color: darkred !important; /* 마우스 오버 시 진한 빨간색 */
+		}
+
 	</style>
 	<meta charset="utf-8">
 	<title>와썹</title>
@@ -46,7 +72,7 @@
 	<meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="https://raw.githubusercontent.com/borinet-dev/img/main/wassub_icon.ico" rel="icon">
+    <link href="https://borinet-dev.github.io/img/wassub_icon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,9 +84,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="https://borinet-dev.github.io/css/css/animate/animate.min.css" rel="stylesheet">
-    <link href="https://borinet-dev.github.io/css/css/owl.carousel.css" rel="stylesheet">
-    <link href="https://borinet-dev.github.io/css/css/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://borinet-dev.github.io/css/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://borinet-dev.github.io/css/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://borinet-dev.github.io/css/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="https://borinet-dev.github.io/css/css/bootstrap.min.css" rel="stylesheet">
@@ -71,7 +97,7 @@
 	<link href="https://borinet-dev.github.io/css/css/style3.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: #2a2a2a;">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
@@ -79,7 +105,7 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-2a2a2a navbar-light sticky-top p-0">
         <a href="https://l2wassub.org" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <img src="https://raw.githubusercontent.com/borinet-dev/img/main/logo_wassub.png" style="max-width: auto; height: auto;">
         </a>
@@ -90,7 +116,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
 				<a onclick="window.open('https://discord.gg/u7MJEsPpUJ')" style="cursor:pointer;" class="nav-item nav-link"><b>디스코드 입장하기</b></a>
                 <a onclick="window.open('../../AccountClassic/', '', 'location=no, width=730, height=650')" style="cursor:pointer;" class="nav-item nav-link"><b>계정관리</b></a>
-				<a onclick="window.open('../../downloads/', '', 'location=no, width=850, height=439, scrollbars=yes')" style="cursor:pointer;" class="nav-item nav-link"><b>다운로드</b></a>
+				<a onclick="window.open('../downloads/', '', 'location=no, width=850, height=439, scrollbars=yes')" style="cursor:pointer;" class="nav-item nav-link"><b>다운로드</b></a>
             </div>
         </div>
     </nav>
@@ -108,15 +134,16 @@
 
     <!-- Start -->
 <div id="viewer" class="white viewer_style rd_nav_blk">
-	<div id="bd_7139_123793" class="bd clear   hover_effect" data-default_style="viewer" data-bdfilestype="" data-bdnavside="N" style="max-width:px">
+	<div style="background-color: #2a2a2a; color: white; id="bd_7139_123793" class="bd clear   hover_effect" data-default_style="viewer" data-bdfilestype="" data-bdnavside="N" style="max-width:px">
 	<article>
 		<div class="document_123793_4 xe_content">
-			<p style="font-family: sans-serif;"><span style="box-sizing: border-box; font-family: &quot;Noto Sans&quot;, &quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; font-weight: 700; color: rgba(0, 0, 0, 0.93); font-size: 18px; background-color: rgb(255, 255, 255);">
+			<p style="font-family: sans-serif;"><span style="box-sizing: border-box; font-family: &quot;Noto Sans&quot;, &quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; font-weight: 700; color: rgba(0, 0, 0, 0.93); font-size: 18px;">
 			<span style="box-sizing: border-box; color: rgb(51, 102, 153); letter-spacing: 0px !important;">
 			● 이벤트 기간<br></span></span>
-			<span style="color: rgba(0, 0, 0, 0.93); font-family: &quot;Noto Sans&quot;, &quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">
+			<span style="color: white; font-family: &quot;Noto Sans&quot;, &quot;Noto Sans KR&quot;, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; font-size: 18px; ">
 			- 매주 금요일 저녁 8시 ~ 일요일 밤 12시까지</span><br></p>
-			<div style="font-family: sans-serif; box-sizing: border-box;"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRTn74%2FbtsgL8N2sDo%2FgKgJErlWGUBxUzRRpyJkS1%2Fimg.jpg" width="100%" height="100%" style="" rel="xe_gallery"><br></div><div style="font-family: sans-serif; box-sizing: border-box;"><p>&nbsp;</p>
+			<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRTn74%2FbtsgL8N2sDo%2FgKgJErlWGUBxUzRRpyJkS1%2Fimg.jpg" width="100%" height="100%" style="" rel="xe_gallery"><br><br>
+			<div style="color: white; font-family: sans-serif; box-sizing: border-box;">
 			안녕하세요. 점점 더워지는 계절입니다.<br>
 			와썹에서는 시원한 여름을 보내시라고 왕수박 이벤트를 준비하였습니다.<br><br><br>
 			<p>&nbsp;</p>
@@ -144,10 +171,10 @@
 			<p>&nbsp;</p>
 
 
-			<br><strong style="color: rgb(31, 31, 31); font-family: -apple-system, BlinkMacSystemFont, Roboto, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Microsoft JhengHei&quot;, meiryo, &quot;MS PGothic&quot;, 돋움, Dotum, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">※</strong><span style="font-family: -apple-system, BlinkMacSystemFont, Roboto, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Microsoft JhengHei&quot;, meiryo, &quot;MS PGothic&quot;, 돋움, Dotum, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255); color: rgb(158, 147, 147);">&nbsp;</span><strong style="color: rgb(31, 31, 31); font-family: -apple-system, BlinkMacSystemFont, Roboto, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Microsoft JhengHei&quot;, meiryo, &quot;MS PGothic&quot;, 돋움, Dotum, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);"><span style="color: rgb(255, 0, 0);">이벤트 아이템은 교환/드롭/파쇄/개인상점/판매대행/상점판매 불가 (계정내 화물 이용 가능)</span></strong></div></article>
+			<br><strong style="color: rgb(31, 31, 31); font-family: -apple-system, BlinkMacSystemFont, Roboto, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Microsoft JhengHei&quot;, meiryo, &quot;MS PGothic&quot;, 돋움, Dotum, sans-serif; font-size: 12px; ">※</strong><span style="font-family: -apple-system, BlinkMacSystemFont, Roboto, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Microsoft JhengHei&quot;, meiryo, &quot;MS PGothic&quot;, 돋움, Dotum, sans-serif; font-size: 12px;  color: rgb(158, 147, 147);">&nbsp;</span><strong style="color: rgb(31, 31, 31); font-family: -apple-system, BlinkMacSystemFont, Roboto, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Microsoft JhengHei&quot;, meiryo, &quot;MS PGothic&quot;, 돋움, Dotum, sans-serif; font-size: 12px; "><span style="color: rgb(255, 0, 0);">이벤트 아이템은 교환/드롭/파쇄/개인상점/판매대행/상점판매 불가 (계정내 화물 이용 가능)</span></strong></div></article>
 		</div>
 	</div>
-</div>
+</div><br><br>
    <!-- End -->
         
 
